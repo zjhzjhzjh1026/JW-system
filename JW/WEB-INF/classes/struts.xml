@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.action.extension" value="do,action" />
+     <!-- 定义包管理配置的action 继承struts-default.xml中的配置 -->
+	<package name="actions" extends="struts-default">
+     <!-- 定义Action(login.action)  -->
+		<action name="login" class="com.UserAction">
+              <!-- 定义转发路径对应的字符串名  -->
+		 	<result name="success">/Main.jsp?username=${name}</result>
+		 	<result name="error">/index.jsp</result>
+		</action> 
+	</package>
+</struts>

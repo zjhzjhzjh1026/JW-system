@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+body{
+  margin:0px 
+}
+div{
+	 /* border:thin solid black */
+}
+fieldset{
+	border:11px solid #B5B8C8;
+	padding:10px;
+	margin-bottom:10px;
+	display:block;  
+}
+#bot{
+	position:relative
+}
+#bot p{
+	position:absolute;
+	bottom:0px;
+	padding:0px;
+	margin:0px
+}
+#main_title{
+	overflow:hidden
+}
+td{
+	
+}
+#ErrorMsg{
+	color:red;
+	font-family:幼圆;
+}
